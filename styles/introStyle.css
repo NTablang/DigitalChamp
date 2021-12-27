@@ -1,0 +1,32 @@
+html {
+    background-color: #000000;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 25px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 15vw;
+}
+.blink {
+    color: #fff002;
+    margin-top: 10vh;
+    font-size: 30px;
+    opacity: 1;
+    animation: blinker 1s step-start infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}

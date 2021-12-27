@@ -1,0 +1,105 @@
+.title-screen {    
+    position: relative;
+    display: flex;
+}
+html {
+    background-color: #000000;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover {
+    z-index: 0;
+    height: 100vh;
+}
+.menu{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    align-items: center;
+    font-family: 'Press Start 2P', sans-serif;
+}
+.digital-position {
+    margin-top: 15vh;
+}
+.subtitle {
+    font-size: 12px;
+    background: -webkit-linear-gradient(to top, #EBEB6B 0%, #670726 100%);
+    background: -moz-linear-gradient(to top, #EBEB6B 0%, #670726 100%);
+    background: linear-gradient(to top, #EBEB6B 0%, #670726 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    filter: drop-shadow(2px 2px #68eefa);
+    margin-top: 2vh;
+}
+h1 {
+    font-size: 13vh;
+    background: -webkit-linear-gradient(90deg, #ebeb6b, #670726);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(10px 10px #68eefa);
+    padding: 0;
+    margin: 0;
+
+}
+.title-caption {
+    margin-top: 10vh;
+    font-size: 50px;
+    height: 0vh;
+}
+.naxat-soft {
+    font-family: 'Orbitron', sans-serif;
+}
+.github-logo{
+    border-radius: 50%;
+    width:auto;
+    height: 20px;
+}
+/* ANIMATIONS */
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.fade-in-key {
+    color: #fff002;
+    margin-top: 10vh;
+    font-size: 35px;
+    opacity: 1;
+
+	animation-name: fadeInKey;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;    
+  
+
+}
+@keyframes fadeInKey {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 0%;
+    }
+}
